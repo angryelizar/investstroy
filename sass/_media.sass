@@ -1,0 +1,67 @@
+@media (max-width: 767px)
+	html
+		font-size: 5px
+	.top-nav
+		&_btn
+			display: block
+		&_menu
+			flex-direction: column
+			display: none
+			&__active
+				display: flex
+			li
+				line-height: 2
+				a
+					&::after
+						display: none
+
+	.left-sidebar
+		&_object
+			display: none
+		&_btn
+			display: block
+		&_menu
+			display: none
+.copy
+	text-align: center
+	small
+		display: block
+		margin: 36px auto
+.footer
+	&-contacts
+		text-align: left
+.left-sidebar_object
+	img
+		width: 100%
+
+@media (min-width: 767px) and (max-width: 991px)
+	html
+		font-size: 5px
+	.top-nav
+		&_btn
+			display: block
+		&_menu
+			display: none
+			&__active
+				display: flex
+				margin-bottom: 0
+				justify-content: space-around
+			li
+				margin-right: 0
+				line-height: 2
+				a
+					&::after
+						display: none
+	.left-sidebar
+		&_object
+			display: none
+		&_btn
+			display: block
+		&_menu
+			display: none
+
+@media (min-width: 992px) and (max-width: 1199px)
+	.top-nav_menu
+	li
+		margin-right: 10px
+		font-size: 12px
